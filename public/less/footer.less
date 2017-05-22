@@ -1,0 +1,89 @@
+@import "config.less";
+@import "common.less";
+
+footer.doc-footer {
+  .default;
+  background: @mud-grey;
+
+  h3, h6, p {
+    color: @white;
+  }
+
+  .doc-footer-content {
+    .default;
+    padding: @space-lg 0 @space-sm 0;
+
+    .nav-social {
+      .default;
+      padding: @space-sm 0;
+
+      li {
+        display: inline-block;
+        margin-right: @space-md;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: @white;
+        }
+      }
+    }
+
+    .newsletter {
+      .default;
+      padding: @space-sm 0;
+
+      input[type="email"] {
+        vertical-align: top;
+        background: none;
+        border: 0;
+        border-bottom: 2px solid @melon-yellow;
+        color: @white;
+        font-size: @typo-call;
+        text-align: center;
+        width: 60%;
+        margin-right: @space-sm;
+      }
+
+      button[type="submit"] {
+        padding: 0 5px;
+        background: none;
+        border: 0;
+        font-size: @typo-action;
+        color: @melon-yellow;
+      }
+
+    }
+
+  }
+
+  .copyright {
+    position: relative;
+    background: @vader-grey;
+    padding: @space-sm 0;
+    text-align: center;
+
+    @trashbot-size: 82px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 2 * @space-sm;
+      bottom: 0;
+      width: @trashbot-size;
+      height: @trashbot-size;
+      background: url("../assets/vectors/ico-trashrobot.svg") top center;
+
+    }
+
+    span {
+      font-size: @typo-xs;
+      color: @white;
+      opacity: 0.58;
+    }
+
+  }
+}

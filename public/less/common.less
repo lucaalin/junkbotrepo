@@ -1,0 +1,72 @@
+@import "config";
+
+// Default
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  outline-width: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: @page-width;
+
+  &.large {
+    max-width: @header-width;
+  }
+}
+
+.default {
+  position: relative;
+  overflow: hidden;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+// Typography
+h3 {
+  font-size: @typo-h3;
+  padding: 0 0 @space-md 0;
+}
+
+h6 {
+  font-size: @typo-h6;
+  line-height: @typo-h6 + 10px;
+}

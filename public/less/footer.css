@@ -59,59 +59,6 @@ h6 {
   font-size: 19px;
   line-height: 29px;
 }
-header.doc-header {
-  position: relative;
-  overflow: hidden;
-}
-header.doc-header .top-bar {
-  padding: 15px 0;
-  text-align: right;
-}
-header.doc-header .top-bar .logo {
-  background: url("../assets/vectors/logo-junkbot.svg") left center no-repeat;
-  background-size: auto 100%;
-  height: 50px;
-}
-header.doc-header .top-bar .main-nav,
-header.doc-header .top-bar .sec-actions {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-header.doc-header .top-bar .main-nav ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-header.doc-header .top-bar .main-nav ul li a {
-  display: block;
-  border-bottom: 2px solid transparent;
-  font-size: 18px;
-  color: #4A4A4A;
-}
-header.doc-header .top-bar .main-nav ul li a:hover {
-  border-bottom: 2px solid #00D561;
-}
-header.doc-header .top-bar .sec-actions .shopping-cart {
-  margin: 0 40px 0 20px;
-}
-header.doc-header .menu-bar {
-  background: #4A4A4A;
-  padding: 15px 0;
-  text-align: center;
-}
-header.doc-header .menu-bar .sec-nav li {
-  display: inline-block;
-  padding: 0 15px;
-}
-header.doc-header .menu-bar .sec-nav li a {
-  font-size: 18px;
-  color: #FFFFFF;
-  display: block;
-  border-bottom: 1px solid transparent;
-}
-header.doc-header .menu-bar .sec-nav li a:hover {
-  border-bottom: 1px solid #FFFFFF;
-}
 footer.doc-footer {
   position: relative;
   overflow: hidden;
