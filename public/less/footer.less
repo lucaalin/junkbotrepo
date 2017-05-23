@@ -5,17 +5,29 @@ footer.doc-footer {
   .default;
   background: @mud-grey;
 
+  @media @port-xs {
+    text-align: center;
+  }
+
   h3, h6, p {
     color: @white;
   }
 
-  .doc-footer-content {
+  .upper-footer {
     .default;
-    padding: @space-lg 0 @space-sm 0;
+    padding: @space-xl 0 @space-lg 0;
+
+    @media @port-xs {
+      padding: @space-lg+@space-sm 0;
+    }
 
     .nav-social {
       .default;
       padding: @space-sm 0;
+
+      @media @port-xs {
+        padding-bottom: @space-lg+@space-sm;
+      }
 
       li {
         display: inline-block;
@@ -27,13 +39,22 @@ footer.doc-footer {
 
         a {
           color: @white;
+
+          &:hover {
+            color: @melon-yellow;
+          }
         }
       }
     }
 
     .newsletter {
       .default;
-      padding: @space-sm 0;
+      display: block;
+      padding: @space-lg 0 @space-lg+@space-md;
+
+      @media @port-xs {
+        padding: 0 0 @space-lg 0;
+      }
 
       input[type="email"] {
         vertical-align: top;
@@ -45,6 +66,14 @@ footer.doc-footer {
         text-align: center;
         width: 60%;
         margin-right: @space-sm;
+
+        @media @port-xs {
+          font-size: @typo-btn;
+        }
+
+        &:focus {
+          border-bottom: 2px solid @white;
+        }
       }
 
       button[type="submit"] {
@@ -53,6 +82,10 @@ footer.doc-footer {
         border: 0;
         font-size: @typo-action;
         color: @melon-yellow;
+
+        &:hover {
+          color: @white;
+        }
       }
 
     }
@@ -75,7 +108,16 @@ footer.doc-footer {
       bottom: 0;
       width: @trashbot-size;
       height: @trashbot-size;
-      background: url("../assets/vectors/ico-trashrobot.svg") top center;
+      background: url("../assets/vectors/ico-trashrobot.svg") top center no-repeat;
+
+      @media @port-xs {
+        background-size: auto 100%;
+        background-position: 0 22px;
+      }
+
+      @media @port-xxs {
+        display: none;
+      }
 
     }
 

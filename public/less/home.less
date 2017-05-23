@@ -1,0 +1,144 @@
+@import "config";
+@import "common";
+
+.intro {
+  .default;
+  overflow: hidden;
+
+  @intro-height: 500px;
+
+  .cover,
+  .content {
+    float: left;
+  }
+
+  .cover {
+    width: 65%;
+    height: @intro-height;
+    background: url("../assets/bitmap/photo-intro.png") center center @gandalf-grey;
+    background-size: cover;
+
+    @media @port-xs {
+      width: 50%;
+      height: @intro-height - 100px;
+    }
+  }
+  .content {
+    width: 35%;
+    background: url("../assets/vectors/bg-intro.svg") center center no-repeat @alien-green;
+    height: @intro-height;
+    padding: @space-lg @space-xl;
+
+    @media @port-xs {
+      width: 50%;
+      padding: @space-lg;
+      height: @intro-height - 100px;
+    }
+
+    h1 {
+      color: @white;
+      padding-top: @space-xl;
+
+      @media @port-xs {
+        font-size: @typo-h1 - 20px;
+
+      }
+    }
+  }
+}
+
+.explore {
+  .default;
+  text-align: center;
+  overflow: hidden;
+  background: @white;
+  padding: @space-xl 0;
+
+  h2,
+  form {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h2 {
+    color: @bloody-red;
+    padding: 0 @space-sm 0 0;
+
+    @media @port-xs {
+      padding: 0;
+      display: block;
+    }
+  }
+
+  form {
+    input[type="search"] {
+      border: 0;
+      border-bottom: 2px solid @bloody-red;
+      font-size: @typo-action;
+      font-weight: 400;
+      color: @bloody-red;
+      text-align: center;
+      margin: @space-sm @space-sm;
+
+      @media @port-xs {
+        display: block;
+      }
+
+    }
+
+    button[type="submit"] {
+      border: 0;
+      background: none;
+      color: @bloody-red;
+      margin: @space-sm 0;
+
+      @media @port-xs {
+        margin: 0;
+      }
+
+      &:hover,
+      &:focus {
+        color: @alien-green;
+      }
+    }
+  }
+}
+
+.steps {
+  .default;
+  background: @milk-grey;
+  padding: @space-xl 0;
+
+  @media @port-xs {
+    padding: @space-sm 0;
+  }
+
+  .step-item {
+    padding: 0 @space-sm;
+    text-align: center;
+
+    @media @port-xs {
+      padding: @space-lg @space-sm;
+    }
+
+    img {
+      position: relative;
+      margin: 0 auto;
+      width: 55%;
+      height: auto;
+
+      @media @port-xs {
+        width: 20%;
+      }
+    }
+
+    h4 {
+      color: @bloody-red;
+      padding: @space-lg 0 0 0;
+
+      @media @port-xs {
+        padding: @space-sm 0 0 0;
+      }
+    }
+  }
+}

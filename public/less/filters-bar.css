@@ -158,123 +158,87 @@ p {
 .dropdown-menu li a {
   padding: 8px 20px;
 }
-footer.doc-footer {
+.filters-bar {
   position: relative;
-  overflow: hidden;
-  background: #4A4A4A;
+  display: block;
+  background: #F4F4F4;
+  min-height: 50px;
+  padding: 10px 30px;
+  margin: 0 0 30px 0;
+  color: #9B9B9B;
+}
+.filters-bar input,
+.filters-bar button {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  height: 30px;
+  font-size: 18px;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer {
-    text-align: center;
+  .filters-bar input,
+  .filters-bar button {
+    font-size: 14px;
   }
 }
-footer.doc-footer h3,
-footer.doc-footer h6,
-footer.doc-footer p {
-  color: #FFFFFF;
-}
-footer.doc-footer .upper-footer {
-  position: relative;
-  overflow: hidden;
-  padding: 70px 0 30px 0;
-}
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer {
-    padding: 45px 0;
-  }
-}
-footer.doc-footer .upper-footer .nav-social {
-  position: relative;
-  overflow: hidden;
-  padding: 15px 0;
-}
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .nav-social {
-    padding-bottom: 45px;
-  }
-}
-footer.doc-footer .upper-footer .nav-social li {
+.filters-bar .sorting,
+.filters-bar .filters {
   display: inline-block;
-  margin-right: 20px;
+  vertical-align: middle;
 }
-footer.doc-footer .upper-footer .nav-social li:last-child {
-  margin-right: 0;
+.filters-bar .sorting button,
+.filters-bar .filters button {
+  color: #9B9B9B;
 }
-footer.doc-footer .upper-footer .nav-social li a {
-  color: #FFFFFF;
+.filters-bar .sorting button:hover,
+.filters-bar .filters button:hover,
+.filters-bar .sorting button:focus,
+.filters-bar .filters button:focus {
+  color: #00D561;
+  box-shadow: none;
 }
-footer.doc-footer .upper-footer .nav-social li a:hover {
-  color: #FFE200;
+.filters-bar .sorting {
+  padding-right: 15px;
 }
-footer.doc-footer .upper-footer .newsletter {
+.filters-bar .searchbar {
   position: relative;
-  overflow: hidden;
-  display: block;
-  padding: 30px 0 50px;
+  text-align: right;
+  height: 30px;
 }
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter {
-    padding: 0 0 30px 0;
-  }
+.filters-bar .searchbar ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #9B9B9B;
 }
-footer.doc-footer .upper-footer .newsletter input[type="email"] {
-  vertical-align: top;
-  background: none;
+.filters-bar .searchbar ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9B9B9B;
+}
+.filters-bar .searchbar :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #9B9B9B;
+}
+.filters-bar .searchbar :-moz-placeholder {
+  /* Firefox 18- */
+  color: #9B9B9B;
+}
+.filters-bar .searchbar input[type="search"] {
   border: 0;
-  border-bottom: 2px solid #FFE200;
-  color: #FFFFFF;
-  font-size: 25px;
-  text-align: center;
-  width: 60%;
-  margin-right: 15px;
-}
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter input[type="email"] {
-    font-size: 20px;
-  }
-}
-footer.doc-footer .upper-footer .newsletter input[type="email"]:focus {
-  border-bottom: 2px solid #FFFFFF;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"] {
+  background: none;
+  color: #2E2D2D;
   padding: 0 5px;
-  background: none;
-  border: 0;
-  font-size: 28px;
-  color: #FFE200;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"]:hover {
-  color: #FFFFFF;
-}
-footer.doc-footer .copyright {
-  position: relative;
-  background: #2E2D2D;
-  padding: 15px 0;
-  text-align: center;
-}
-footer.doc-footer .copyright::after {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 30px;
-  bottom: 0;
-  width: 82px;
-  height: 82px;
-  background: url("../assets/vectors/ico-trashrobot.svg") top center no-repeat;
+  max-width: 160px;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer .copyright::after {
-    background-size: auto 100%;
-    background-position: 0 22px;
+  .filters-bar .searchbar input[type="search"] {
+    max-width: 100px;
+    text-align: right;
   }
 }
-@media only screen and (max-width: 480px) {
-  footer.doc-footer .copyright::after {
-    display: none;
-  }
+.filters-bar .searchbar button[type="submit"] {
+  padding: 0;
 }
-footer.doc-footer .copyright span {
-  font-size: 14px;
-  color: #FFFFFF;
-  opacity: 0.58;
+.filters-bar .searchbar button[type="submit"] i {
+  position: relative;
+  top: -1px;
+  transform: scale(1.4);
 }

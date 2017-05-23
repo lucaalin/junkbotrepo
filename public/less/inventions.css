@@ -158,123 +158,120 @@ p {
 .dropdown-menu li a {
   padding: 8px 20px;
 }
-footer.doc-footer {
+section.inventions {
   position: relative;
   overflow: hidden;
-  background: #4A4A4A;
+  padding: 70px 0;
+}
+section.inventions .load-more {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer {
-    text-align: center;
+  section.inventions .load-more {
+    padding-top: 0;
   }
 }
-footer.doc-footer h3,
-footer.doc-footer h6,
-footer.doc-footer p {
-  color: #FFFFFF;
+section.inventions .load-more a {
+  color: #EC204F;
 }
-footer.doc-footer .upper-footer {
+section.inventions .load-more a:hover {
+  color: #00D561;
+}
+section.inventions .invention {
   position: relative;
   overflow: hidden;
-  padding: 70px 0 30px 0;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out 0s;
+  text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer {
-    padding: 45px 0;
-  }
+section.inventions .invention:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
-footer.doc-footer .upper-footer .nav-social {
+section.inventions .invention header {
   position: relative;
   overflow: hidden;
-  padding: 15px 0;
+  background-position: center center;
+  background-size: cover;
+  background-color: #F4F4F4;
+  height: 225px;
 }
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .nav-social {
-    padding-bottom: 45px;
-  }
-}
-footer.doc-footer .upper-footer .nav-social li {
-  display: inline-block;
-  margin-right: 20px;
-}
-footer.doc-footer .upper-footer .nav-social li:last-child {
-  margin-right: 0;
-}
-footer.doc-footer .upper-footer .nav-social li a {
-  color: #FFFFFF;
-}
-footer.doc-footer .upper-footer .nav-social li a:hover {
-  color: #FFE200;
-}
-footer.doc-footer .upper-footer .newsletter {
+section.inventions .invention header a {
   position: relative;
-  overflow: hidden;
+  z-index: 1;
   display: block;
-  padding: 30px 0 50px;
+  width: 100%;
+  height: 100%;
 }
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter {
-    padding: 0 0 30px 0;
-  }
-}
-footer.doc-footer .upper-footer .newsletter input[type="email"] {
-  vertical-align: top;
-  background: none;
-  border: 0;
-  border-bottom: 2px solid #FFE200;
-  color: #FFFFFF;
-  font-size: 25px;
-  text-align: center;
-  width: 60%;
-  margin-right: 15px;
-}
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter input[type="email"] {
-    font-size: 20px;
-  }
-}
-footer.doc-footer .upper-footer .newsletter input[type="email"]:focus {
-  border-bottom: 2px solid #FFFFFF;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"] {
-  padding: 0 5px;
-  background: none;
-  border: 0;
-  font-size: 28px;
-  color: #FFE200;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"]:hover {
-  color: #FFFFFF;
-}
-footer.doc-footer .copyright {
-  position: relative;
-  background: #2E2D2D;
-  padding: 15px 0;
-  text-align: center;
-}
-footer.doc-footer .copyright::after {
+section.inventions .invention header .excerpt {
   position: absolute;
-  display: block;
-  content: "";
-  left: 30px;
-  bottom: 0;
-  width: 82px;
-  height: 82px;
-  background: url("../assets/vectors/ico-trashrobot.svg") top center no-repeat;
-}
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .copyright::after {
-    background-size: auto 100%;
-    background-position: 0 22px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  footer.doc-footer .copyright::after {
-    display: none;
-  }
-}
-footer.doc-footer .copyright span {
-  font-size: 14px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1950FF;
   color: #FFFFFF;
-  opacity: 0.58;
+  text-align: left;
+  transition: all 0.2s ease-in-out 0s;
+  opacity: 0;
+}
+section.inventions .invention header .excerpt p {
+  font-size: 13px;
+}
+section.inventions .invention:hover .excerpt {
+  opacity: 1;
+}
+section.inventions .invention footer {
+  position: relative;
+}
+section.inventions .invention footer .avatar {
+  z-index: 2;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -30px;
+  background: #9B9B9B;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out 0s;
+}
+section.inventions .invention footer .avatar:hover {
+  transform: scale(1.1);
+}
+section.inventions .invention footer .avatar img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+section.inventions .invention footer p {
+  padding: 35px 0 0 0;
+  margin: 0;
+}
+section.inventions .invention footer p a {
+  color: #2E2D2D;
+}
+section.inventions .invention footer p a:hover {
+  color: #00D561;
+}
+section.inventions .invention footer ul {
+  padding-bottom: 5px;
+}
+section.inventions .invention footer li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 11px;
+  color: #9B9B9B;
+}
+section.inventions .invention footer li span {
+  font-size: 15px;
 }

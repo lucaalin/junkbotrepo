@@ -15,7 +15,20 @@ button,
 input {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
-  outline-width: 0;
+  outline-width: 0 !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: darken(@milk-grey, 3%);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: darken(@milk-grey, 3%);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: darken(@milk-grey, 3%);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: darken(@milk-grey, 3%);
 }
 
 a,
@@ -31,10 +44,56 @@ ol {
   list-style: none;
 }
 
+button.btn {
+  font-size: @typo-btn;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 8px @space-lg;
+
+  @media @port-xs {
+    font-size: @typo-nav;
+    padding: 6px @space-sm;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &.btn-transparent {
+    background: none;
+    color: @white;
+    border: 1px solid @white;
+
+    &:hover,
+    &:focus {
+      background: @alien-green;
+    }
+  }
+
+  &.btn-empty {
+    background: @white;
+    color: @vader-grey;
+    border: 1px solid @alien-green;
+  }
+
+  &.btn-primary {
+    background: @alien-green;
+    border: 1px solid @alien-green;
+    color: @white;
+
+    &:hover,
+    &:focus {
+      background: @bloody-red;
+      border: 1px solid @bloody-red;
+    }
+  }
+}
+
 .wrapper {
   position: relative;
   margin: 0 auto;
   max-width: @page-width;
+  padding: 0 @space-lg;
 
   &.large {
     max-width: @header-width;
@@ -44,6 +103,19 @@ ol {
 .default {
   position: relative;
   overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: @space-xl;
+
+  h3 {
+    padding: 0;
+  }
+
+  @media @port-xs {
+    padding-bottom: @space-lg;
+  }
 }
 
 .italic {
@@ -61,12 +133,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Typography
+h1 {
+  font-size: @typo-h1;
+  padding: 0 0 @space-lg 0;
+}
+
+h2 {
+  font-size: @typo-h2;
+  padding: 0 0 @space-sm 0;
+  font-weight: 500;
+}
+
 h3 {
   font-size: @typo-h3;
   padding: 0 0 @space-md 0;
 }
 
+h4 {
+  font-size: @typo-h4;
+  padding: 0 0 @space-md 0;
+  line-height: @typo-h4 + 10px;
+
+  @media @port-xs {
+    line-height: normal;
+    font-size: @typo-h4 - 6px;
+  }
+}
+
 h6 {
   font-size: @typo-h6;
   line-height: @typo-h6 + 10px;
+}
+
+p {
+  font-size: @typo-xs;
+  line-height: @typo-xs + 9px;
+  padding: 0 0 @space-md 0;
+}
+
+// Bootstrap
+.dropdown-menu {
+  border: 0;
+
+  li {
+    a {
+      padding: @space-xs+3px @space-md;
+    }
+  }
 }

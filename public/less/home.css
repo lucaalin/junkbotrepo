@@ -158,123 +158,136 @@ p {
 .dropdown-menu li a {
   padding: 8px 20px;
 }
-footer.doc-footer {
+.intro {
   position: relative;
   overflow: hidden;
-  background: #4A4A4A;
+}
+.intro .cover,
+.intro .content {
+  float: left;
+}
+.intro .cover {
+  width: 65%;
+  height: 500px;
+  background: url("../assets/bitmap/photo-intro.png") center center #9B9B9B;
+  background-size: cover;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer {
-    text-align: center;
+  .intro .cover {
+    width: 50%;
+    height: 400px;
   }
 }
-footer.doc-footer h3,
-footer.doc-footer h6,
-footer.doc-footer p {
+.intro .content {
+  width: 35%;
+  background: url("../assets/vectors/bg-intro.svg") center center no-repeat #00D561;
+  height: 500px;
+  padding: 30px 70px;
+}
+@media only screen and (max-width: 768px) {
+  .intro .content {
+    width: 50%;
+    padding: 30px;
+    height: 400px;
+  }
+}
+.intro .content h1 {
   color: #FFFFFF;
-}
-footer.doc-footer .upper-footer {
-  position: relative;
-  overflow: hidden;
-  padding: 70px 0 30px 0;
+  padding-top: 70px;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer {
-    padding: 45px 0;
+  .intro .content h1 {
+    font-size: 39px;
   }
 }
-footer.doc-footer .upper-footer .nav-social {
+.explore {
   position: relative;
+  text-align: center;
   overflow: hidden;
-  padding: 15px 0;
+  background: #FFFFFF;
+  padding: 70px 0;
 }
-@media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .nav-social {
-    padding-bottom: 45px;
-  }
-}
-footer.doc-footer .upper-footer .nav-social li {
+.explore h2,
+.explore form {
   display: inline-block;
-  margin-right: 20px;
+  vertical-align: middle;
 }
-footer.doc-footer .upper-footer .nav-social li:last-child {
-  margin-right: 0;
+.explore h2 {
+  color: #EC204F;
+  padding: 0 15px 0 0;
 }
-footer.doc-footer .upper-footer .nav-social li a {
-  color: #FFFFFF;
+@media only screen and (max-width: 768px) {
+  .explore h2 {
+    padding: 0;
+    display: block;
+  }
 }
-footer.doc-footer .upper-footer .nav-social li a:hover {
-  color: #FFE200;
+.explore form input[type="search"] {
+  border: 0;
+  border-bottom: 2px solid #EC204F;
+  font-size: 28px;
+  font-weight: 400;
+  color: #EC204F;
+  text-align: center;
+  margin: 15px 15px;
 }
-footer.doc-footer .upper-footer .newsletter {
+@media only screen and (max-width: 768px) {
+  .explore form input[type="search"] {
+    display: block;
+  }
+}
+.explore form button[type="submit"] {
+  border: 0;
+  background: none;
+  color: #EC204F;
+  margin: 15px 0;
+}
+@media only screen and (max-width: 768px) {
+  .explore form button[type="submit"] {
+    margin: 0;
+  }
+}
+.explore form button[type="submit"]:hover,
+.explore form button[type="submit"]:focus {
+  color: #00D561;
+}
+.steps {
   position: relative;
   overflow: hidden;
-  display: block;
-  padding: 30px 0 50px;
+  background: #F4F4F4;
+  padding: 70px 0;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter {
-    padding: 0 0 30px 0;
+  .steps {
+    padding: 15px 0;
   }
 }
-footer.doc-footer .upper-footer .newsletter input[type="email"] {
-  vertical-align: top;
-  background: none;
-  border: 0;
-  border-bottom: 2px solid #FFE200;
-  color: #FFFFFF;
-  font-size: 25px;
+.steps .step-item {
+  padding: 0 15px;
   text-align: center;
-  width: 60%;
-  margin-right: 15px;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer .upper-footer .newsletter input[type="email"] {
-    font-size: 20px;
+  .steps .step-item {
+    padding: 30px 15px;
   }
 }
-footer.doc-footer .upper-footer .newsletter input[type="email"]:focus {
-  border-bottom: 2px solid #FFFFFF;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"] {
-  padding: 0 5px;
-  background: none;
-  border: 0;
-  font-size: 28px;
-  color: #FFE200;
-}
-footer.doc-footer .upper-footer .newsletter button[type="submit"]:hover {
-  color: #FFFFFF;
-}
-footer.doc-footer .copyright {
+.steps .step-item img {
   position: relative;
-  background: #2E2D2D;
-  padding: 15px 0;
-  text-align: center;
-}
-footer.doc-footer .copyright::after {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 30px;
-  bottom: 0;
-  width: 82px;
-  height: 82px;
-  background: url("../assets/vectors/ico-trashrobot.svg") top center no-repeat;
+  margin: 0 auto;
+  width: 55%;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
-  footer.doc-footer .copyright::after {
-    background-size: auto 100%;
-    background-position: 0 22px;
+  .steps .step-item img {
+    width: 20%;
   }
 }
-@media only screen and (max-width: 480px) {
-  footer.doc-footer .copyright::after {
-    display: none;
-  }
+.steps .step-item h4 {
+  color: #EC204F;
+  padding: 30px 0 0 0;
 }
-footer.doc-footer .copyright span {
-  font-size: 14px;
-  color: #FFFFFF;
-  opacity: 0.58;
+@media only screen and (max-width: 768px) {
+  .steps .step-item h4 {
+    padding: 15px 0 0 0;
+  }
 }

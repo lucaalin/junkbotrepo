@@ -1,0 +1,85 @@
+@import "config.less";
+@import "common.less";
+
+section.pre-footer {
+  .default;
+
+  .inventions {
+    background: url("../assets/vectors/bg-inventions.svg") left center @bloody-red no-repeat;
+    color: @white;
+    padding: @space-xl;
+
+    @media @port-xs {
+      text-align: center;
+      padding: @space-lg;
+    }
+
+    h4 {
+      padding: 0;
+    }
+
+    .btn-transparent {
+      margin-top: @space-sm;
+      width: 100%;
+
+      @media @port-xs {
+        width: auto;
+      }
+
+      &:hover,
+      &:focus {
+        background: @bloody-red;
+      }
+    }
+  }
+
+  .call-to-action {
+    .default;
+    background: url("../assets/bitmap/bg-call.jpg");
+    text-align: right;
+
+    @media @port-xs {
+      text-align: center;
+    }
+
+    .wrapper {
+      background: url("../assets/vectors/bg-call.svg") bottom left no-repeat;
+      min-height: 440px;
+
+      @media @port-xs {
+        background-size: 60%;
+        background-position: bottom center;
+        min-height: 400px;
+      }
+
+      @media @port-xxs {
+        min-height: 360px;
+      }
+    }
+
+    h3 {
+      padding-top: @space-xl * 2;
+      padding-bottom: @space-xl;
+
+      @media @port-xs {
+        padding: @space-lg 0;
+      }
+    }
+
+    .btn-primary {
+      color: @vader-grey;
+      width: 80%;
+
+      @media @port-xs {
+        width: auto;
+      }
+
+      &:hover,
+      &:focus {
+        color: @white;
+      }
+    }
+  }
+
+
+}
