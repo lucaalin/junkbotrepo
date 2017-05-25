@@ -452,3 +452,124 @@ section.project .title h3 {
     margin-top: 20px;
   }
 }
+.comps-list li,
+.comps-list .btn-add {
+  display: inline-block;
+  margin: 15px 15px 15px 0;
+  min-height: 30px;
+  font-size: 14px;
+  background: #E7E7E7;
+  border: 1px solid #DDDDDD;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 15px;
+  line-height: 28px;
+  color: #9B9B9B;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+.comps-list li.active,
+.comps-list .btn-add.active,
+.comps-list li:hover,
+.comps-list .btn-add:hover {
+  background: #EC204F;
+  border: 1px solid #BD0A34;
+  color: #FFFFFF;
+}
+.comps-list .btn-add {
+  width: 30px;
+  padding: 0;
+  background: #EC204F;
+  border: 1px solid #BD0A34;
+  color: #FFFFFF;
+}
+.comps-list .btn-add:hover,
+.comps-list .btn-add:focus {
+  background: #00D561;
+  border: 1px solid #00D561;
+}
+.comps-list .btn-add img {
+  position: relative;
+  top: -1px;
+}
+.uploaded-files {
+  position: relative;
+  padding-top: 20px;
+}
+.uploaded-files li {
+  position: relative;
+  color: #EC204F;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.uploaded-files li:last-child {
+  margin-bottom: 0;
+}
+.btn-action {
+  margin: 0;
+  margin-left: 15px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background: #EC204F;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+}
+.btn-action img {
+  position: relative;
+  top: -2px;
+}
+.btn-action:hover,
+.btn-action:focus {
+  background: #d6123f;
+}
+.add-more {
+  margin-top: 15px;
+  text-align: right;
+  position: relative;
+  color: #EC204F;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .add-more {
+    text-align: left;
+  }
+}
+.project-steps ul {
+  position: relative;
+}
+.project-steps ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.project-steps ul li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9B9B9B;
+}
+.project-steps ul li a:hover,
+.project-steps ul li a.active {
+  color: #00D561;
+}
+.all-set {
+  text-align: center;
+  padding: 140px 0 210px 0;
+}
+.all-set h4 {
+  color: #EC204F;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.all-set a {
+  color: #9B9B9B;
+  font-size: 15px;
+  line-height: 25px;
+}
+.all-set a:hover {
+  color: #00D561;
+}

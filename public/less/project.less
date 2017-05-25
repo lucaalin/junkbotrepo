@@ -307,7 +307,148 @@ section.project {
     }
   }
 
+}
 
+.comps-list {
+  li,
+  .btn-add {
+    display: inline-block;
+    margin: @space-sm @space-sm @space-sm 0;
+    min-height: 30px;
+    font-size: @typo-xs;
+    background: #E7E7E7;
+    border: 1px solid @mid-grey;
+    text-align: center;
+    padding: 0 @space-md;
+    border-radius: 15px;
+    line-height: 28px;
+    color: #9B9B9B;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
 
+    &.active,
+    &:hover {
+      background: @bloody-red;
+      border: 1px solid #BD0A34;
+      color: @white;
+    }
+  }
 
+  .btn-add {
+    width: 30px;
+    padding: 0;
+    background: @bloody-red;
+    border: 1px solid #BD0A34;
+    color: @white;
+
+    &:hover,
+    &:focus {
+      background: @alien-green;
+      border: 1px solid @alien-green;
+    }
+
+    img {
+      position: relative;
+      top: -1px;
+    }
+  }
+
+}
+
+.uploaded-files {
+  position: relative;
+  padding-top: @space-md;
+
+  li {
+    position: relative;
+    color: @bloody-red;
+    font-size: @typo-sm;
+    font-weight: 500;
+    margin-bottom: @space-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.btn-action {
+  margin: 0;
+  margin-left: @space-sm;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background: @bloody-red;
+  color: @white;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+
+  img {
+    position: relative;
+    top: -2px;
+  }
+
+  &:hover,
+  &:focus {
+    background: darken(@bloody-red, 7%);
+  }
+}
+
+.add-more {
+  margin-top: @space-sm;
+  text-align: right;
+  position: relative;
+  color: @bloody-red;
+  font-size: @typo-sm;
+  font-weight: 500;
+
+  @media @port-xs {
+    text-align: left;
+  }
+}
+
+.project-steps {
+  ul {
+    position: relative;
+
+    li {
+      position: relative;
+      margin-bottom: @space-xs * 2;
+
+      a {
+        display: block;
+        font-size: @typo-nav;
+        font-weight: 500;
+        color: @gandalf-grey;
+
+        &:hover,
+        &.active {
+          color: @alien-green;
+        }
+      }
+    }
+  }
+}
+
+.all-set {
+  text-align: center;
+  padding: @space-xl * 2 0 @space-xl * 3 0;
+
+  h4 {
+    color: @bloody-red;
+    font-weight: 500;
+    padding-top: @space-sm;
+  }
+
+  a {
+    color: @gandalf-grey;
+    font-size: @typo-sm;
+    line-height: @typo-sm + 10px;
+
+    &:hover {
+      color: @alien-green;
+    }
+  }
 }
