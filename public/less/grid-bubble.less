@@ -1,0 +1,285 @@
+@import "config";
+@import "common";
+
+.grid-bubble {
+  position: relative;
+  padding: @space-sm;
+  float: left;
+  width: 20%;
+  text-align: center;
+
+  @media @port-xs {
+    width: 50%;
+  }
+
+  header {
+
+    @avatar-size: 150px;
+    @avatar-size-xs: 130px;
+
+    .avatar {
+      position: relative;
+      margin: 0 auto;
+      width: @avatar-size - 10px;
+      height: @avatar-size - 10px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out 0s;
+      border: 1px solid @milk-grey;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      @media @port-lg {
+        width: @avatar-size;
+        height: @avatar-size;
+      }
+
+      @media @port-xs {
+        width: @avatar-size-xs;
+        height: @avatar-size-xs;
+      }
+
+      a {
+        display: block;
+
+        img {
+          display: block;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @alien-green;
+        text-align: center;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: @typo-btn;
+          color: @white;
+          line-height: @avatar-size;
+        }
+      }
+    }
+
+    h4 {
+      position: relative;
+      display: block;
+      padding: @space-sm 0 0 0;
+
+      a {
+        position: relative;
+        display: inline-block;
+        color: @vader-grey;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -7px;
+          left: 50%;
+          margin-left: -20px;
+          width: 40px;
+          height: 2px;
+          background: none;
+          transition: all 0.2s ease-in-out 0s;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    display: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: @space-xl * 3 + @space-lg + @space-xs @space-sm @space-md @space-sm;
+    border-radius: 8px;
+    background: @link-blue;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    color: @white;
+    transition: all 0.2s ease-in-out 0s;
+
+    @media @port-xs {
+      padding-top: @space-xl * 3;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    ul {
+      li {
+        position: relative;
+        overflow: hidden;
+        padding: @space-xs 0;
+        font-weight: 400;
+
+        span {
+          display: block;
+        }
+
+        span:first-child {
+          float: left;
+        }
+
+        span:last-child {
+          float: right;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    header {
+      .avatar {
+        z-index: 4;
+        border: 1px solid transparent;
+      }
+
+      h4 {
+        z-index: 4;
+
+        a {
+          color: @white;
+
+          &:after {
+            background: @white;
+          }
+
+          &:hover {
+            color: @alien-green;
+
+            &:after {
+              background: @alien-green;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-simple-bubble {
+  position: relative;
+  padding: @space-sm;
+  float: left;
+  width: 20%;
+  text-align: center;
+
+  @media @port-xs {
+    width: 50%;
+  }
+
+  header {
+
+    @avatar-size: 150px;
+    @avatar-size-xs: 130px;
+
+    .avatar {
+      position: relative;
+      margin: 0 auto;
+      width: @avatar-size - 10px;
+      height: @avatar-size - 10px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out 0s;
+      border: 1px solid @milk-grey;
+
+      &:hover {
+        transform: scale(1.05);
+        border: 1px solid @gandalf-grey;
+      }
+
+      @media @port-lg {
+        width: @avatar-size;
+        height: @avatar-size;
+      }
+
+      @media @port-xs {
+        width: @avatar-size-xs;
+        height: @avatar-size-xs;
+      }
+
+      a {
+        display: block;
+
+        img {
+          display: block;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @alien-green;
+        text-align: center;
+        transition: all 0.2s ease-in-out 0s;
+        opacity: 0;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: @typo-btn;
+          color: @white;
+          line-height: @avatar-size;
+        }
+      }
+    }
+
+    h4 {
+      position: relative;
+      display: block;
+      padding: @space-sm 0 0 0;
+
+      a {
+        position: relative;
+        display: inline-block;
+        color: @vader-grey;
+      }
+    }
+  }
+
+  &:hover {
+    .avatar {
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+}

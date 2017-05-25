@@ -7,7 +7,8 @@ body {
 }
 a,
 button,
-input {
+input,
+textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
@@ -78,6 +79,25 @@ button.btn.btn-primary:focus {
   background: #EC204F;
   border: 1px solid #EC204F;
 }
+button.btn.btn-social {
+  background: #2E629F;
+  color: #FFFFFF;
+}
+button.btn.btn-social:hover,
+button.btn.btn-social:focus {
+  background: #28568b;
+}
+button.btn.btn-upload {
+  font-size: 14px;
+  color: #9B9B9B;
+  background: #DDDDDD;
+  border: 1px solid #E6E5E5;
+}
+button.btn.btn-upload:focus,
+button.btn.btn-upload:hover {
+  background: #00D561;
+  color: #FFFFFF;
+}
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -90,6 +110,13 @@ button.btn.btn-primary:focus {
 .default {
   position: relative;
   overflow: hidden;
+}
+.generic-page {
+  position: relative;
+  padding: 90px 0;
+}
+.generic-page .title h3 {
+  font-weight: 400;
 }
 .title {
   text-align: center;

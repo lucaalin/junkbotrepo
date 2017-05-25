@@ -7,7 +7,8 @@ body {
 }
 a,
 button,
-input {
+input,
+textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
@@ -78,6 +79,25 @@ button.btn.btn-primary:focus {
   background: #EC204F;
   border: 1px solid #EC204F;
 }
+button.btn.btn-social {
+  background: #2E629F;
+  color: #FFFFFF;
+}
+button.btn.btn-social:hover,
+button.btn.btn-social:focus {
+  background: #28568b;
+}
+button.btn.btn-upload {
+  font-size: 14px;
+  color: #9B9B9B;
+  background: #DDDDDD;
+  border: 1px solid #E6E5E5;
+}
+button.btn.btn-upload:focus,
+button.btn.btn-upload:hover {
+  background: #00D561;
+  color: #FFFFFF;
+}
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -90,6 +110,13 @@ button.btn.btn-primary:focus {
 .default {
   position: relative;
   overflow: hidden;
+}
+.generic-page {
+  position: relative;
+  padding: 90px 0;
+}
+.generic-page .title h3 {
+  font-weight: 400;
 }
 .title {
   text-align: center;
@@ -698,6 +725,296 @@ section.pre-footer .call-to-action .btn-primary:focus {
   top: -1px;
   transform: scale(1.4);
 }
+.grid-bubble {
+  position: relative;
+  padding: 15px;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .grid-bubble {
+    width: 50%;
+  }
+}
+.grid-bubble header .avatar {
+  position: relative;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out 0s;
+  border: 1px solid #F4F4F4;
+}
+.grid-bubble header .avatar:hover {
+  transform: scale(1.05);
+}
+@media only screen and (min-width: 1200px) {
+  .grid-bubble header .avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-bubble header .avatar {
+    width: 130px;
+    height: 130px;
+  }
+}
+.grid-bubble header .avatar a {
+  display: block;
+}
+.grid-bubble header .avatar a img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.grid-bubble header .avatar .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00D561;
+  text-align: center;
+}
+.grid-bubble header .avatar .overlay a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 150px;
+}
+.grid-bubble header h4 {
+  position: relative;
+  display: block;
+  padding: 15px 0 0 0;
+}
+.grid-bubble header h4 a {
+  position: relative;
+  display: inline-block;
+  color: #2E2D2D;
+}
+.grid-bubble header h4 a:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 2px;
+  background: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+.grid-bubble footer {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 245px 15px 20px 15px;
+  border-radius: 8px;
+  background: #1950FF;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out 0s;
+}
+@media only screen and (max-width: 768px) {
+  .grid-bubble footer {
+    padding-top: 210px;
+  }
+}
+.grid-bubble footer p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.grid-bubble footer ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 0;
+  font-weight: 400;
+}
+.grid-bubble footer ul li span {
+  display: block;
+}
+.grid-bubble footer ul li span:first-child {
+  float: left;
+}
+.grid-bubble footer ul li span:last-child {
+  float: right;
+}
+.grid-bubble:hover header .avatar {
+  z-index: 4;
+  border: 1px solid transparent;
+}
+.grid-bubble:hover header h4 {
+  z-index: 4;
+}
+.grid-bubble:hover header h4 a {
+  color: #FFFFFF;
+}
+.grid-bubble:hover header h4 a:after {
+  background: #FFFFFF;
+}
+.grid-bubble:hover header h4 a:hover {
+  color: #00D561;
+}
+.grid-bubble:hover header h4 a:hover:after {
+  background: #00D561;
+}
+.grid-bubble:hover footer {
+  display: block;
+}
+.grid-simple-bubble {
+  position: relative;
+  padding: 15px;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .grid-simple-bubble {
+    width: 50%;
+  }
+}
+.grid-simple-bubble header .avatar {
+  position: relative;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out 0s;
+  border: 1px solid #F4F4F4;
+}
+.grid-simple-bubble header .avatar:hover {
+  transform: scale(1.05);
+  border: 1px solid #9B9B9B;
+}
+@media only screen and (min-width: 1200px) {
+  .grid-simple-bubble header .avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-simple-bubble header .avatar {
+    width: 130px;
+    height: 130px;
+  }
+}
+.grid-simple-bubble header .avatar a {
+  display: block;
+}
+.grid-simple-bubble header .avatar a img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.grid-simple-bubble header .avatar .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00D561;
+  text-align: center;
+  transition: all 0.2s ease-in-out 0s;
+  opacity: 0;
+}
+.grid-simple-bubble header .avatar .overlay a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 150px;
+}
+.grid-simple-bubble header h4 {
+  position: relative;
+  display: block;
+  padding: 15px 0 0 0;
+}
+.grid-simple-bubble header h4 a {
+  position: relative;
+  display: inline-block;
+  color: #2E2D2D;
+}
+.grid-simple-bubble:hover .avatar .overlay {
+  opacity: 1;
+}
+.form-page {
+  padding: 140px 0 280px 0;
+}
+.form-page .title h3 {
+  font-weight: 400;
+}
+form.generic-form {
+  position: relative;
+}
+form.generic-form input {
+  display: block;
+  padding: 8px 15px;
+  border: 1px solid #F4F4F4;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+form.generic-form input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c1c1c1;
+}
+form.generic-form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c1c1c1;
+}
+form.generic-form input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c1c1c1;
+}
+form.generic-form input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #c1c1c1;
+}
+form.generic-form input:focus {
+  border: 1px solid #00D561;
+}
+form.generic-form .separator {
+  display: block;
+  height: 15px;
+}
+form.generic-form .already-member {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+form.generic-form .already-member a {
+  color: #1950FF;
+}
+form.generic-form .already-member a:hover {
+  color: #00D561;
+}
+form.generic-form .btn {
+  padding: 8px 15px;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+form.generic-form .submit-separator {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .intro {
   position: relative;
   overflow: hidden;
@@ -947,4 +1264,274 @@ section.inventions .invention footer li {
 }
 section.inventions .invention footer li span {
   font-size: 15px;
+}
+section.contributors .contributors-wrapper {
+  position: relative;
+}
+section.project .title {
+  text-align: left;
+}
+section.project .title h3 {
+  color: #00D561;
+  font-weight: 500;
+}
+.accordion {
+  position: relative;
+  overflow: hidden;
+}
+.accordion .panel {
+  border: 0;
+  margin: 0;
+}
+.accordion .panel:first-child .panel-title {
+  padding-top: 0;
+}
+.accordion .panel:first-child .panel-title:after {
+  top: 5px;
+}
+.accordion .panel .panel-title {
+  position: relative;
+  padding-top: 20px;
+}
+.accordion .panel .panel-title:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 10px;
+  top: 0;
+  left: 10px;
+  background: #DDDDDD;
+}
+.accordion .panel .panel-title a {
+  display: block;
+}
+.accordion .panel .panel-title a > * {
+  vertical-align: middle;
+}
+.accordion .panel .panel-title a .btn-collapse {
+  position: relative;
+  margin-right: 30px;
+  z-index: 2;
+}
+.accordion .panel .panel-title a span {
+  font-size: 27px;
+  font-weight: 500;
+  color: #EC204F;
+}
+.accordion .panel .panel-title a.collapsed span {
+  font-size: 14px;
+  color: #DDDDDD;
+}
+.accordion .panel .panel-title a.collapsed .btn-collapse {
+  cursor: default;
+  background: #DDDDDD !important;
+}
+.accordion .panel .panel-title a.collapsed .btn-collapse img {
+  display: none;
+}
+.accordion .panel .panel-collapse {
+  position: relative;
+  padding: 30px 0 30px 60px;
+}
+.accordion .panel .panel-collapse:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 10px;
+  top: 0;
+  left: 10px;
+  background: #DDDDDD;
+}
+.accordion .panel .panel-collapse .content {
+  position: relative;
+  padding-right: 70px;
+  width: 85%;
+}
+@media only screen and (max-width: 768px) {
+  .accordion .panel .panel-collapse .content {
+    width: auto;
+  }
+}
+.accordion .panel .panel-collapse .btn-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+}
+.btn-collapse,
+.btn-next {
+  border: 0;
+  border-radius: 50%;
+}
+.btn-collapse {
+  width: 30px;
+  height: 30px;
+  background: #EC204F;
+}
+.btn-collapse:hover,
+.btn-collapse:focus {
+  background: #db1341;
+}
+.btn-collapse.disabled {
+  cursor: default;
+  background: #DDDDDD !important;
+}
+.btn-collapse.disabled img {
+  display: none;
+}
+.btn-next {
+  width: 40px;
+  height: 40px;
+  background: #00D561;
+}
+.btn-next:hover,
+.btn-next:focus {
+  background: #FFE200;
+}
+.project-name {
+  position: relative;
+  padding: 70px 0;
+}
+@media only screen and (max-width: 768px) {
+  .project-name {
+    padding: 30px 0;
+  }
+}
+.project-name input {
+  background: none;
+  padding: 5px;
+  border: 0;
+  border-bottom: 3px solid #DDDDDD;
+  color: #2E2D2D;
+  font-weight: 500;
+  font-size: 28px;
+  min-width: 340px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .project-name input {
+    min-width: 0;
+    font-size: 20px;
+  }
+}
+.project-name input:focus {
+  border-bottom: 3px solid #00D561;
+}
+.brief {
+  position: relative;
+}
+.brief textarea {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  background: #F9F9F9;
+  border: 1px #E6E5E5;
+  color: #2E2D2D;
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .brief textarea {
+    height: 240px;
+  }
+}
+.upload {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  background: #F9F9F9;
+  border: 1px #E6E5E5;
+}
+@media only screen and (max-width: 768px) {
+  .upload {
+    text-align: center;
+  }
+}
+.upload > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.upload span {
+  display: none;
+}
+.upload .input-area {
+  cursor: pointer;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 2px dashed #979797;
+  transition: all 0.2s ease-in-out 0s;
+}
+.upload .input-area:hover {
+  border: 2px dashed #8a8a8a;
+}
+.upload .input-area:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -30px;
+  width: 1px;
+  height: 80%;
+  top: 10%;
+  background: #9B9B9B;
+}
+@media only screen and (max-width: 768px) {
+  .upload .input-area {
+    width: 100%;
+    height: 80%;
+  }
+  .upload .input-area:after {
+    display: none;
+  }
+}
+.upload .input-area span {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #9B9B9B;
+  font-size: 14px;
+  top: 50%;
+  margin-top: -10px;
+}
+.upload .input-area input[type="file"] {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.upload .button-area {
+  text-align: center;
+  width: 48%;
+}
+@media only screen and (max-width: 768px) {
+  .upload .button-area {
+    width: auto;
+  }
+}
+.upload .button-area .btn-upload {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-left: 60px;
+}
+@media only screen and (min-width: 1200px) {
+  .upload .button-area .btn-upload {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .upload .button-area .btn-upload {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }

@@ -12,7 +12,8 @@ body {
 
 a,
 button,
-input {
+input,
+textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
@@ -87,6 +88,29 @@ button.btn {
       border: 1px solid @bloody-red;
     }
   }
+
+  &.btn-social {
+    background: @facebook-blue;
+    color: @white;
+
+    &:hover,
+    &:focus {
+      background: darken(@facebook-blue, 5%);
+    }
+  }
+
+  &.btn-upload {
+    font-size: @typo-xs;
+    color: @gandalf-grey;
+    background: @mid-grey;
+    border: 1px solid @border-grey;
+
+    &:focus,
+    &:hover {
+      background: @alien-green;
+      color: @white;
+    }
+  }
 }
 
 .wrapper {
@@ -103,6 +127,17 @@ button.btn {
 .default {
   position: relative;
   overflow: hidden;
+}
+
+.generic-page {
+  position: relative;
+  padding: @space-xl + @space-md 0;
+
+  .title {
+    h3 {
+      font-weight: 400;
+    }
+  }
 }
 
 .title {
