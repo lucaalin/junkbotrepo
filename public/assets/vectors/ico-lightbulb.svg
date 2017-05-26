@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="26px" viewBox="0 0 18 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>lightbulb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Pagge" transform="translate(-254.000000, -634.000000)">
+            <g id="lightbulb" transform="translate(250.000000, 634.000000)">
+                <rect id="cont" fill="#181818" opacity="0" x="0" y="0" width="26" height="26"></rect>
+                <path d="M16.5454545,16.3402541 L16.5454545,19.4815341 C16.5454545,20.1444327 16.0124839,20.6818182 15.3425785,20.6818182 L10.6574215,20.6818182 C9.99309141,20.6818182 9.45454545,20.1538157 9.45454545,19.4815341 L9.45454545,16.3402541 C6.6596077,15.012524 4.72727273,12.1637407 4.72727273,8.86363636 C4.72727273,4.29473525 8.43109889,0.590909091 13,0.590909091 C17.5689011,0.590909091 21.2727273,4.29473525 21.2727273,8.86363636 C21.2727273,12.1637407 19.3403923,15.012524 16.5454545,16.3402541 Z" id="Rectangle-104" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M13,2.95454545 C9.73649921,2.95454545 7.09090909,5.60013557 7.09090909,8.86363636" id="Oval-42" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect id="Rectangle-105-Copy" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" x="9.45454545" y="20.6818182" width="7.09090909" height="2.36363636" rx="1.18181818"></rect>
+                <path d="M11.2272727,23.6363636 C11.2272727,24.6154139 12.0209498,25.4090909 13,25.4090909 L13,25.4090909 C13.9790502,25.4090909 14.7727273,24.6154139 14.7727273,23.6363636" id="Oval-42" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

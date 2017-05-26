@@ -1,0 +1,488 @@
+@import "config";
+@import "common";
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: @space-xl * 2 0 @space-xl * 3.5 0;
+
+  @media @port-xs {
+    padding: @space-xl * 1.5 0;
+  }
+
+  header.page-head {
+
+    h3 {
+      font-weight: 400;
+      padding-bottom: 0;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      margin-bottom: @space-sm;
+      padding: @space-lg 0;
+
+      @avatar-size: 50px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: @space-xl;
+        height: 8px;
+        background: @alien-green;
+      }
+
+      > * {
+        display: inline-block;
+      }
+
+      h5 {
+        position: relative;
+        color: @alien-green;
+        font-weight: 400;
+        margin-left: @space-sm;
+        top: 2px;
+      }
+
+      img {
+        position: relative;
+        width: @avatar-size;
+        height: auto;
+        border-radius: 50%;
+        border: 1px solid @dashed-border;
+      }
+    }
+
+    &.simple {
+      h3 {
+        padding-bottom: @space-xl * 1.5;
+
+        @media @port-xs {
+          padding-bottom: @space-xl;
+        }
+      }
+    }
+  }
+}
+
+.page {
+  position: relative;
+
+  &.separated {
+    &:after {
+      content: "";
+      position: absolute;
+      right: -@space-lg * 2;
+      top: @space-sm;
+      width: 1px;
+      height: 100%;
+      background: @dashed-border;
+
+      @media @port-xs {
+        display: none;
+      }
+    }
+  }
+
+  .info-bar {
+    font-size: @typo-xs -2px;
+    line-height: @space-md;
+    color: @vader-grey;
+    padding: @space-sm 0 @space-xs 0;
+
+    ul {
+      position: relative;
+      text-align: right;
+      color: @black;
+
+      li {
+        display: inline-block;
+        margin-left: @space-xs * 2;
+      }
+    }
+  }
+
+  .cover-image {
+    position: relative;
+    border: 1px solid @mid-grey;
+    margin-bottom: @space-lg;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h5 {
+    position: relative;
+    display: block;
+    color: @alien-green;
+    font-weight: 400;
+    padding-bottom: @space-sm;
+    margin-bottom: @space-lg;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: @space-xl + @space-sm;
+      height: 4px;
+      background: @alien-green;
+    }
+  }
+
+  p {
+    font-size: @typo-xs;
+    line-height: @typo-call;
+    color: @gandalf-grey;
+    margin: 0;
+    padding-bottom: @space-md;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .slider {
+    position: relative;
+
+    .carousel {
+
+      .carousel-inner {
+        .item {
+          border: 1px solid @dashed-border;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      &.carousel-thumbs {
+        margin-top: @space-lg;
+
+        .item {
+          border: 0;
+        }
+
+        .thumb-btns {
+          position: relative;
+          overflow: hidden;
+          padding: 0 @space-lg 0 @space-lg + @space-sm;
+
+          .thumb-wrapper {
+            width: 16.6%;
+            float: left;
+            padding-right: @space-sm;
+
+            button {
+              border: 1px solid @dashed-border;
+              padding: 0;
+              width: 100%;
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+
+        .carousel-btn {
+          position: absolute;
+          top: 0;
+          width: @space-lg;
+          height: 100%;
+          background: @carousel-grey;
+          border: 1px solid @dashed-border;
+
+          img {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            margin-top: -9px;
+          }
+
+          &:hover {
+            border: 1px solid @dark-green;
+          }
+
+          &.btn-c-left {
+            left: 0;
+          }
+
+          &.btn-c-right {
+            right: 0;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .tabs {
+    position: relative;
+    padding-top: @space-lg;
+
+    .tab-list {
+      position: relative;
+      padding-bottom: @space-lg;
+
+      li {
+        display: inline-block;
+        margin-right: @space-lg + @space-sm;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        h5 {
+          color: @gandalf-grey;
+          font-size: @typo-h5 - 1px;
+
+          @media @port-xs {
+            font-size: @typo-h5 - 5px;
+          }
+
+          &:after {
+            display: none;
+            max-width: 100%;
+          }
+        }
+
+        &.active {
+          h5 {
+            color: @dark-green;
+
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .attachments-list {
+    position: relative;
+
+    li {
+      padding-bottom: @space-sm;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      a {
+        font-size: @typo-sm;
+        color: @vader-grey;
+        font-weight: 400;
+
+        &:hover {
+          color: @alien-green;
+
+          img {
+            opacity: 0.5;
+          }
+        }
+
+        img {
+          position: relative;
+          margin: -3px @space-sm 0 0;
+          transition: all 0.2s ease-in-out 0s;
+        }
+      }
+    }
+  }
+
+  // TODO remove this class once code view/editor in place
+  .code-view-wrapper {
+    position: relative;
+    background: @carousel-grey;
+    min-height: 300px;
+    text-align: center;
+    padding: @space-lg;
+  }
+
+}
+
+aside.sidebar {
+  position: relative;
+  padding-top: @space-sm;
+
+  @media @port-xs {
+    padding-top: @space-lg + @space-sm;
+  }
+
+  .aside-title {
+    position: relative;
+    padding-bottom: @space-lg;
+
+    h5 {
+      position: relative;
+      display: block;
+      color: @alien-green;
+      font-weight: 400;
+      padding-bottom: @space-lg;
+
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: @space-xl;
+        height: 8px;
+        background: @alien-green;
+      }
+    }
+  }
+
+  .aside-item {
+    position: relative;
+    padding-bottom: @space-lg;
+
+    &:hover {
+      footer {
+        a {
+          color: @alien-green;
+        }
+      }
+    }
+
+    &.circular {
+      header {
+        border-radius: 50%;
+        border: 0;
+
+        &.expand {
+          header {
+            border: 1px solid @mid-grey;
+          }
+        }
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &.expand {
+      .more {
+        opacity: 1;
+        background: @milk-grey;
+
+        a {
+          color: @gandalf-grey;
+          font-size: @typo-call;
+          padding-top: 30%;
+
+          &:hover {
+            color: @white;
+          }
+        }
+
+        &:hover {
+          background: @alien-green;
+        }
+      }
+    }
+
+    a {
+      display: block;
+    }
+
+    header {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s ease-in-out 0s;
+      border: 1px solid @mid-grey;
+
+      &:hover {
+        border: 1px solid @alien-green;
+
+        .more {
+          opacity: 1;
+        }
+      }
+
+      img {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .more {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: @alien-green;
+        transition: all 0.2s ease-in-out 0s;
+        opacity: 0;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding-top: 40%;
+          color: @white;
+          font-size: @typo-xs - 2px;
+        }
+      }
+    }
+
+    footer {
+      position: relative;
+      text-align: center;
+      padding-top: @space-xs;
+      font-size: @typo-xs - 2px;
+
+      a {
+        color: @vader-grey;
+      }
+    }
+  }
+
+  .aside-actions {
+    button {
+      width: 70%;
+      margin-bottom: @space-sm;
+
+      @media @port-xs {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: @typo-nav;
+  text-align: center;
+  padding: 6px @space-lg;
+
+  &.btn-primary {
+    color: @white;
+    background: @alien-green;
+    border: 1px solid @dark-green;
+  }
+
+  &.btn-secondary {
+    background: @milk-grey;
+    color: @vader-grey;
+    border: 1px solid @gandalf-grey;
+
+    &:hover,
+    &:focus {
+      background: @white;
+    }
+  }
+}

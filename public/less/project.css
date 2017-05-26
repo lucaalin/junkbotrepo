@@ -170,6 +170,10 @@ h4 {
     font-size: 21px;
   }
 }
+h5 {
+  font-size: 21px;
+  line-height: normal;
+}
 h6 {
   font-size: 19px;
   line-height: 29px;

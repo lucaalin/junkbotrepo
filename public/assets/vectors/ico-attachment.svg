@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="22px" viewBox="0 0 14 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_attachment copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Project-Attachment" transform="translate(-265.000000, -1014.000000)" stroke="#000000">
+            <g id="ic_attachment" transform="translate(261.000000, 1015.000000)">
+                <g id="attachment">
+                    <g transform="translate(10.937500, 10.500000) rotate(-360.000000) translate(-10.937500, -10.500000) translate(4.375000, 0.875000)" stroke-width="2">
+                        <path d="M12.25,6.125 C12.25,2.74225591 9.70361951,1.1937118e-12 6.5625,1.1937118e-12 C3.42138049,1.1937118e-12 0.875,2.74225591 0.875,6.125" id="Oval-13"></path>
+                        <path d="M0.875,6.125 L0.875,14.875" id="Line"></path>
+                        <path d="M0.875,14.875 C0.875,17.0496212 2.6378788,18.8125 4.8125,18.8125 L4.8125,18.8125 C6.9871212,18.8125 8.75,17.0496212 8.75,14.875" id="Oval-13"></path>
+                        <path d="M8.75,14.875 L8.75,6.125" id="Line"></path>
+                        <path d="M8.75,6.125 C8.75,4.91687711 7.77062289,3.9375 6.5625,3.9375 C5.35437711,3.9375 4.375,4.91687711 4.375,6.125" id="Oval-13"></path>
+                        <path d="M4.375,6.125 L4.375,14" id="Line"></path>
+                        <path d="M12.25,6.125 L12.25,14" id="Line"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

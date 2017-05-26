@@ -189,83 +189,55 @@ p {
 .dropdown-menu li a {
   padding: 8px 20px;
 }
-section.pre-footer {
+.user-profile-page {
   position: relative;
-  overflow: hidden;
-}
-section.pre-footer .inventions {
-  background: url("../assets/vectors/bg-inventions.svg") left center #EC204F no-repeat;
-  color: #FFFFFF;
-  padding: 70px;
-}
-@media only screen and (max-width: 768px) {
-  section.pre-footer .inventions {
-    text-align: center;
-    padding: 30px;
-  }
-}
-section.pre-footer .inventions h4 {
-  padding: 0;
-}
-section.pre-footer .inventions .btn-transparent {
-  margin-top: 15px;
-  width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  section.pre-footer .inventions .btn-transparent {
-    width: auto;
-  }
-}
-section.pre-footer .inventions .btn-transparent:hover,
-section.pre-footer .inventions .btn-transparent:focus {
-  background: #EC204F;
-}
-section.pre-footer .call-to-action {
-  position: relative;
-  overflow: hidden;
-  background: url("../assets/bitmap/bg-call.jpg");
-  text-align: right;
-}
-@media only screen and (max-width: 768px) {
-  section.pre-footer .call-to-action {
-    text-align: center;
-  }
-}
-section.pre-footer .call-to-action .wrapper {
-  background: url("../assets/vectors/bg-call.svg") bottom left no-repeat;
-  min-height: 440px;
-}
-@media only screen and (max-width: 768px) {
-  section.pre-footer .call-to-action .wrapper {
-    background-size: 60%;
-    background-position: bottom center;
-    min-height: 400px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  section.pre-footer .call-to-action .wrapper {
-    min-height: 360px;
-  }
-}
-section.pre-footer .call-to-action h3 {
-  padding-top: 140px;
   padding-bottom: 70px;
 }
+.user-profile-page header {
+  position: relative;
+}
 @media only screen and (max-width: 768px) {
-  section.pre-footer .call-to-action h3 {
-    padding: 30px 0;
+  .user-profile-page header {
+    padding-bottom: 30px;
   }
 }
-section.pre-footer .call-to-action .btn-primary {
+.user-profile-page header img {
+  position: relative;
+  width: 130px;
+  height: auto;
+}
+.user-profile-page header h4 {
+  position: relative;
+  display: block;
   color: #2E2D2D;
-  width: 80%;
+  padding: 30px 0;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
-  section.pre-footer .call-to-action .btn-primary {
-    width: auto;
+  .user-profile-page header h4 {
+    display: inline-block;
+    margin-left: 15px;
   }
 }
-section.pre-footer .call-to-action .btn-primary:hover,
-section.pre-footer .call-to-action .btn-primary:focus {
-  color: #FFFFFF;
+.user-profile-page header h4:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 8px;
+  background: #00D561;
+}
+.user-profile-page footer table {
+  font-size: 21px;
+  color: #2E2D2D;
+}
+.user-profile-page footer table td {
+  padding: 15px 30px 15px 0;
+}
+.user-profile-page footer table tr td:last-child {
+  padding-right: 0;
+}
+.user-profile-page footer table img {
+  margin-right: 10px;
 }

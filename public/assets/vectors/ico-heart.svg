@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Pagge" transform="translate(-251.000000, -759.000000)">
+            <g id="heart" transform="translate(250.000000, 757.000000)">
+                <rect id="cont" fill="#181818" opacity="0" x="0" y="0" width="26" height="26"></rect>
+                <path d="M14.7307326,5.27618701 C17.0383761,2.96854347 20.7798055,2.96854347 23.0874491,5.27618701 C25.3950926,7.58383055 25.3950926,11.32526 23.0874491,13.6329035 L13.2954544,23.4248982 L3.50345974,13.6329035 C1.1958162,11.32526 1.1958162,7.58383055 3.50345974,5.27618701 C5.81110328,2.96854347 9.5525327,2.96854347 11.8601762,5.27618701 C12.5372718,5.95328257 13.0156979,6.75381553 13.2954544,7.60534931 C13.575211,6.75381553 14.053637,5.95328257 14.7307326,5.27618701 Z" id="Oval-26" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.68181818,5.90909091 C5.72371771,5.90909091 4.13636364,7.49644498 4.13636364,9.45454545" id="Oval-42" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
