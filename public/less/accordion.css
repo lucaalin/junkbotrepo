@@ -1,0 +1,293 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+}
+a,
+button,
+input,
+textarea {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  outline-width: 0 !important;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ececec;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ececec;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ececec;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ececec;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button.btn {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 8px 30px;
+}
+@media only screen and (max-width: 768px) {
+  button.btn {
+    font-size: 18px;
+    padding: 6px 15px;
+  }
+}
+button.btn:focus {
+  box-shadow: none;
+}
+button.btn.btn-transparent {
+  background: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+button.btn.btn-transparent:hover,
+button.btn.btn-transparent:focus {
+  background: #00D561;
+}
+button.btn.btn-empty {
+  background: #FFFFFF;
+  color: #2E2D2D;
+  border: 1px solid #00D561;
+}
+button.btn.btn-primary {
+  background: #00D561;
+  border: 1px solid #00D561;
+  color: #FFFFFF;
+}
+button.btn.btn-primary:hover,
+button.btn.btn-primary:focus {
+  background: #EC204F;
+  border: 1px solid #EC204F;
+}
+button.btn.btn-social {
+  background: #2E629F;
+  color: #FFFFFF;
+}
+button.btn.btn-social:hover,
+button.btn.btn-social:focus {
+  background: #28568b;
+}
+button.btn.btn-upload {
+  font-size: 14px;
+  color: #9B9B9B;
+  background: #DDDDDD;
+  border: 1px solid #E6E5E5;
+}
+button.btn.btn-upload:focus,
+button.btn.btn-upload:hover {
+  background: #00D561;
+  color: #FFFFFF;
+}
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 0 30px;
+}
+.wrapper.large {
+  max-width: 1260px;
+}
+.default {
+  position: relative;
+  overflow: hidden;
+}
+.generic-page {
+  position: relative;
+  padding: 90px 0;
+}
+.generic-page .title h3 {
+  font-weight: 400;
+}
+.title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.title h3 {
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .title {
+    padding-bottom: 30px;
+  }
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+h1 {
+  font-size: 59px;
+  padding: 0 0 30px 0;
+}
+h2 {
+  font-size: 40px;
+  padding: 0 0 15px 0;
+  font-weight: 500;
+}
+h3 {
+  font-size: 35px;
+  padding: 0 0 20px 0;
+}
+h4 {
+  font-size: 27px;
+  padding: 0 0 20px 0;
+  line-height: 37px;
+}
+@media only screen and (max-width: 768px) {
+  h4 {
+    line-height: normal;
+    font-size: 21px;
+  }
+}
+h5 {
+  font-size: 21px;
+  line-height: normal;
+}
+h6 {
+  font-size: 19px;
+  line-height: 29px;
+}
+p {
+  font-size: 14px;
+  line-height: 23px;
+  padding: 0 0 20px 0;
+}
+.dropdown-menu {
+  border: 0;
+}
+.dropdown-menu li a {
+  padding: 8px 20px;
+}
+.accordion-page {
+  overflow: visible;
+  padding-top: 30px;
+}
+.accordion-page * {
+  box-shadow: none !important;
+}
+.accordion-page .panel:first-child .panel-title {
+  padding-top: 0;
+}
+.accordion-page .panel:first-child .panel-title:after {
+  top: 10px;
+}
+.accordion-page .panel:last-child .panel-title a {
+  display: block;
+}
+.accordion-page .panel:last-child .panel-title a:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 2px;
+  background: #00D561;
+  background: #FFFFFF;
+  z-index: 1;
+  height: 0px;
+  top: auto;
+  bottom: 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+.accordion-page .panel:last-child .panel-title a.collapsed:before {
+  height: 8px;
+}
+.accordion-page .panel .panel-title:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 2px;
+  background: #00D561;
+}
+.accordion-page .panel .panel-title a .btn-collapse {
+  margin-right: 0;
+}
+.accordion-page .panel .panel-title a span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3cb775;
+  text-transform: uppercase;
+}
+.accordion-page .panel .panel-title a.collapsed span {
+  color: #00D561;
+}
+.accordion-page .panel .panel-collapse {
+  padding: 0;
+}
+.accordion-page .panel .panel-collapse:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 2px;
+  background: #00D561;
+}
+.accordion-page .panel .panel-collapse .content {
+  padding: 15px 0 0 20px;
+  width: auto;
+}
+.accordion-page .panel .panel-collapse .content img.full-img {
+  position: relative;
+  border: 1px solid #979797;
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+}
+.accordion-page .btn-collapse {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  margin: 0;
+  background: #00D561;
+}
+.accordion-page .btn-collapse:hover,
+.accordion-page .btn-collapse:focus {
+  background: #00D561;
+}
+.accordion-page .btn-collapse.disabled {
+  cursor: default;
+  background: #00D561 !important;
+}
+.accordion-page .btn-collapse.disabled img {
+  display: none;
+}

@@ -311,6 +311,219 @@
     padding: @space-lg;
   }
 
+  .comment-form {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: @space-lg + @space-sm;
+
+    form {
+      textarea {
+        display: block;
+        border: 1px solid @carousel-grey;
+        padding: @space-sm;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 100px;
+        max-height: 300px;
+        min-height: 80px;
+
+        &:focus {
+          border: 1px solid @alien-green;
+        }
+      }
+
+      button {
+        float: right;
+      }
+    }
+
+    .not-member {
+      text-align: center;
+      padding: @space-sm;
+
+      p {
+        font-size: @typo-sm;
+        padding: 0;
+        font-weight: 400;
+      }
+
+      button {
+      }
+    }
+
+    button {
+      margin-top: @space-md;
+      font-size: @typo-sm;
+      padding: 6px @space-lg * 2;
+
+      &.btn-primary {
+        border: 1px solid @dark-green;
+
+        &:focus,
+        &:hover {
+          border: 1px solid @bloody-red;
+        }
+      }
+    }
+  }
+
+  .comments-list {
+
+    .comm-item {
+      position: relative;
+      overflow: hidden;
+      padding-left: @avatar-size + @space-md;
+      padding-bottom: @space-md;
+
+      &.comm-small {
+        padding-left: @avatar-size / 1.5 + @space-md;
+        padding-bottom: @space-sm;
+
+        .avatar {
+          width: @avatar-size / 1.5;
+          height: @avatar-size / 1.5;
+        }
+
+        .content {
+          header {
+            margin-bottom: 0;
+
+            border: 0;
+
+            h6 {
+              font-size: @typo-xs - 2px;
+            }
+
+            time {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+
+      @avatar-size: 54px;
+
+      .avatar {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: @avatar-size;
+        height: @avatar-size;
+        border: 1px solid @dashed-border;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .content {
+        position: relative;
+        overflow: hidden;
+
+        header {
+          position: relative;
+          padding-bottom: @space-xs;
+          border-bottom: 1px solid @dashed-border;
+          margin-bottom: @space-xs * 2;
+
+          h6 {
+            color: @gandalf-grey;
+            line-height: normal;
+          }
+
+          time {
+            display: block;
+            padding-top: 4px;
+            text-align: right;
+            font-size: @typo-xs - 2px;
+            color: @vader-grey;
+          }
+        }
+
+        p {
+          font-size: @typo-xs - 1px;
+          color: @gandalf-grey;
+          line-height: @typo-xs + 5px;
+          padding-bottom: @space-xs * 2;
+        }
+
+        ul {
+          li {
+            display: inline-block;
+            margin-right: @space-md;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            a {
+              font-size: @typo-xs - 2;
+              color: @gandalf-grey;
+              text-decoration: underline !important;
+
+              &:hover,
+              &.active {
+                color: @vader-grey;
+              }
+            }
+          }
+        }
+
+        footer {
+          position: relative;
+          padding-top: @space-xs * 2;
+
+          form {
+            textarea {
+              display: block;
+              border: 1px solid @carousel-grey;
+              padding: @space-sm;
+              width: 100%;
+              max-width: 100%;
+              min-width: 100%;
+              height: 80px;
+              max-height: 300px;
+              min-height: 80px;
+
+              &:focus {
+                border: 1px solid @alien-green;
+              }
+            }
+
+            button {
+              float: right;
+              padding: 2px @space-lg;
+              margin-top: @space-xs * 2;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    button {
+      margin-top: @space-md;
+      font-size: @typo-sm;
+      padding: 6px @space-lg * 2;
+
+      &.btn-primary {
+        border: 1px solid @dark-green;
+      }
+
+      &.btn-secondary {
+        color: @gandalf-grey;
+        border: 1px solid @mid-grey;
+        width: 100%;
+      }
+    }
+
+  }
+
 }
 
 aside.sidebar {

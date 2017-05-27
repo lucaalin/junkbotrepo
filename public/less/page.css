@@ -436,6 +436,166 @@ p {
   text-align: center;
   padding: 30px;
 }
+.page .comment-form {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 45px;
+}
+.page .comment-form form textarea {
+  display: block;
+  border: 1px solid #ECECEC;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100px;
+  max-height: 300px;
+  min-height: 80px;
+}
+.page .comment-form form textarea:focus {
+  border: 1px solid #00D561;
+}
+.page .comment-form form button {
+  float: right;
+}
+.page .comment-form .not-member {
+  text-align: center;
+  padding: 15px;
+}
+.page .comment-form .not-member p {
+  font-size: 15px;
+  padding: 0;
+  font-weight: 400;
+}
+.page .comment-form button {
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 6px 60px;
+}
+.page .comment-form button.btn-primary {
+  border: 1px solid #3cb775;
+}
+.page .comment-form button.btn-primary:focus,
+.page .comment-form button.btn-primary:hover {
+  border: 1px solid #EC204F;
+}
+.page .comments-list .comm-item {
+  position: relative;
+  overflow: hidden;
+  padding-left: 74px;
+  padding-bottom: 20px;
+}
+.page .comments-list .comm-item.comm-small {
+  padding-left: 56px;
+  padding-bottom: 15px;
+}
+.page .comments-list .comm-item.comm-small .avatar {
+  width: 36px;
+  height: 36px;
+}
+.page .comments-list .comm-item.comm-small .content header {
+  margin-bottom: 0;
+  border: 0;
+}
+.page .comments-list .comm-item.comm-small .content header h6 {
+  font-size: 12px;
+}
+.page .comments-list .comm-item.comm-small .content header time {
+  padding-top: 0;
+}
+.page .comments-list .comm-item .avatar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+}
+.page .comments-list .comm-item .avatar img {
+  width: 100%;
+  height: auto;
+}
+.page .comments-list .comm-item .content {
+  position: relative;
+  overflow: hidden;
+}
+.page .comments-list .comm-item .content header {
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 10px;
+}
+.page .comments-list .comm-item .content header h6 {
+  color: #9B9B9B;
+  line-height: normal;
+}
+.page .comments-list .comm-item .content header time {
+  display: block;
+  padding-top: 4px;
+  text-align: right;
+  font-size: 12px;
+  color: #2E2D2D;
+}
+.page .comments-list .comm-item .content p {
+  font-size: 13px;
+  color: #9B9B9B;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+.page .comments-list .comm-item .content ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.page .comments-list .comm-item .content ul li:last-child {
+  margin-right: 0;
+}
+.page .comments-list .comm-item .content ul li a {
+  font-size: 12px;
+  color: #9B9B9B;
+  text-decoration: underline !important;
+}
+.page .comments-list .comm-item .content ul li a:hover,
+.page .comments-list .comm-item .content ul li a.active {
+  color: #2E2D2D;
+}
+.page .comments-list .comm-item .content footer {
+  position: relative;
+  padding-top: 10px;
+}
+.page .comments-list .comm-item .content footer form textarea {
+  display: block;
+  border: 1px solid #ECECEC;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 80px;
+  max-height: 300px;
+  min-height: 80px;
+}
+.page .comments-list .comm-item .content footer form textarea:focus {
+  border: 1px solid #00D561;
+}
+.page .comments-list .comm-item .content footer form button {
+  float: right;
+  padding: 2px 30px;
+  margin-top: 10px;
+}
+.page .comments-list button {
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 6px 60px;
+}
+.page .comments-list button.btn-primary {
+  border: 1px solid #3cb775;
+}
+.page .comments-list button.btn-secondary {
+  color: #9B9B9B;
+  border: 1px solid #DDDDDD;
+  width: 100%;
+}
 aside.sidebar {
   position: relative;
   padding-top: 15px;

@@ -1,0 +1,133 @@
+@import "config";
+@import "common";
+
+.accordion-page {
+  overflow: visible;
+  padding-top: @space-lg;
+
+  * {
+    box-shadow: none !important;
+  }
+
+  .panel {
+
+    @panel-offset-xs: 20px;
+
+    &:first-child {
+      .panel-title {
+        padding-top: 0;
+
+        &:after {
+          top: 10px;
+        }
+      }
+    }
+
+    &:last-child {
+      .panel-title {
+        a {
+          display: block;
+
+          &:before {
+            .after-xs-style();
+            background: @white;
+            z-index: 1;
+            height: 0px;
+            top: auto;
+            bottom: 0;
+            transition: all 0.2s ease-in-out 0s;
+          }
+
+          &.collapsed {
+            &:before {
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .panel-title {
+
+      &:after {
+        .after-xs-style();
+      }
+
+      a {
+
+        .btn-collapse {
+          margin-right: 0;
+        }
+
+        span {
+          font-size: @typo-xs;
+          font-weight: 400;
+          color: @dark-green;
+          text-transform: uppercase;
+        }
+
+        &.collapsed {
+          span {
+            color: @alien-green;
+          }
+        }
+      }
+    }
+
+    .panel-collapse {
+      padding: 0;
+
+      &:after {
+        .after-xs-style();
+      }
+
+      .content {
+        padding: @space-sm 0 0 @space-md;
+        width: auto;
+
+        img.full-img {
+          position: relative;
+          border: 1px solid @dashed-border;
+          margin-bottom: @space-sm;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+  }
+
+  .btn-collapse {
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    background: @alien-green;
+
+    &:hover,
+    &:focus {
+      background: @alien-green;
+    }
+
+    &.disabled {
+      cursor: default;
+      background: @alien-green !important;
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.after-xs-style() {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 2px;
+  background: @alien-green;
+}
