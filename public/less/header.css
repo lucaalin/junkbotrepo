@@ -12,6 +12,7 @@ textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
+  outline: none;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -350,8 +351,9 @@ header.doc-header .header-container .nav-bar .nav-menu .e-commerce {
     position: fixed;
     z-index: 20;
     bottom: 30px;
-    left: 50%;
-    margin-left: -110px;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 header.doc-header .header-container .nav-bar .nav-menu .user-profile button.btn {
@@ -374,11 +376,28 @@ header.doc-header .header-container .nav-bar .nav-menu .user-profile a {
 header.doc-header .header-container .nav-bar .nav-menu .user-profile a:hover {
   color: #EC204F;
 }
+@media only screen and (max-width: 768px) {
+  header.doc-header .header-container .nav-bar .nav-menu .user-profile a:hover {
+    color: #FFFFFF;
+  }
+}
 header.doc-header .header-container .sub-header {
-  position: relative;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 35;
   background: #4A4A4A;
   text-align: center;
   padding: 15px 0;
+  transition: all 0.15s ease;
+}
+@media only screen and (max-width: 768px) {
+  header.doc-header .header-container .sub-header {
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: inherit;
+  }
 }
 header.doc-header .header-container .sub-header .sec-nav li {
   display: inline-block;
@@ -421,4 +440,7 @@ header.doc-header .header-container .sub-header .sec-nav li a .active:after {
   header.doc-header .header-container .sub-header .sec-nav li a .active {
     color: #00D561;
   }
+}
+.sticky-header {
+  top: 0px !important;
 }

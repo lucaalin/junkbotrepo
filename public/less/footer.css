@@ -12,6 +12,7 @@ textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
+  outline: none;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -254,7 +255,7 @@ footer.doc-footer .upper-footer .newsletter input[type="email"] {
   border: 0;
   border-bottom: 2px solid #FFE200;
   color: #FFFFFF;
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
   width: 60%;
   margin-right: 15px;

@@ -172,8 +172,9 @@ header.doc-header {
             position: fixed;
             z-index: 20;
             bottom: @space-lg;
-            left: 50%;
-            margin-left: -110px;
+            left: 0;
+            width: 100%;
+            text-align: center;
           }
 
           button.btn {
@@ -198,6 +199,10 @@ header.doc-header {
 
             &:hover {
               color: @bloody-red;
+
+              @media @port-xs {
+                color: @white;
+              }
             }
           }
         }
@@ -206,10 +211,21 @@ header.doc-header {
     }
 
     .sub-header {
-      position: relative;
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      z-index: 35;
       background: @mud-grey;
       text-align: center;
       padding: @space-sm 0;
+      transition: all 0.15s ease;
+
+      @media @port-xs {
+        position: relative;
+        top: 0;
+        width: auto;
+        z-index: inherit;
+      }
 
       .sec-nav {
         li {
@@ -259,5 +275,9 @@ header.doc-header {
     }
 
   }
+}
+
+.sticky-header {
+  top: 0px !important;
 }
 

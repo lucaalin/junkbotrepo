@@ -18,4 +18,15 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).tab('show');
     });
+
+    // Sticky header
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('.sub-header').addClass("sticky-header");
+        }
+        else{
+            $('.sub-header').removeClass("sticky-header");
+        }
+    });
+
 });

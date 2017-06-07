@@ -2,7 +2,11 @@
 @import "common";
 
 .form-page {
-  padding: @space-xl * 2 0 @space-xl * 4 0;
+  padding: @space-xl 0;
+
+  @media @port-lg {
+    padding: @space-xl * 1.5 0 @space-xl * 2 0;
+  }
 
   .title {
     h3 {

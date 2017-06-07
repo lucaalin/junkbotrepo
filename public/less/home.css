@@ -12,6 +12,7 @@ textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
+  outline: none;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -264,7 +265,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .explore form input[type="search"] {
-    display: block;
+    margin: 10px;
   }
 }
 .explore form button[type="submit"] {
@@ -276,6 +277,7 @@ p {
 @media only screen and (max-width: 768px) {
   .explore form button[type="submit"] {
     margin: 0;
+    padding-left: 0;
   }
 }
 .explore form button[type="submit"]:hover,

@@ -12,6 +12,7 @@ textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
+  outline: none;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -350,8 +351,9 @@ header.doc-header .header-container .nav-bar .nav-menu .e-commerce {
     position: fixed;
     z-index: 20;
     bottom: 30px;
-    left: 50%;
-    margin-left: -110px;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 header.doc-header .header-container .nav-bar .nav-menu .user-profile button.btn {
@@ -374,11 +376,28 @@ header.doc-header .header-container .nav-bar .nav-menu .user-profile a {
 header.doc-header .header-container .nav-bar .nav-menu .user-profile a:hover {
   color: #EC204F;
 }
+@media only screen and (max-width: 768px) {
+  header.doc-header .header-container .nav-bar .nav-menu .user-profile a:hover {
+    color: #FFFFFF;
+  }
+}
 header.doc-header .header-container .sub-header {
-  position: relative;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 35;
   background: #4A4A4A;
   text-align: center;
   padding: 15px 0;
+  transition: all 0.15s ease;
+}
+@media only screen and (max-width: 768px) {
+  header.doc-header .header-container .sub-header {
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: inherit;
+  }
 }
 header.doc-header .header-container .sub-header .sec-nav li {
   display: inline-block;
@@ -421,6 +440,9 @@ header.doc-header .header-container .sub-header .sec-nav li a .active:after {
   header.doc-header .header-container .sub-header .sec-nav li a .active {
     color: #00D561;
   }
+}
+.sticky-header {
+  top: 0px !important;
 }
 footer.doc-footer {
   position: relative;
@@ -487,7 +509,7 @@ footer.doc-footer .upper-footer .newsletter input[type="email"] {
   border: 0;
   border-bottom: 2px solid #FFE200;
   color: #FFFFFF;
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
   width: 60%;
   margin-right: 15px;
@@ -960,7 +982,12 @@ section.pre-footer .call-to-action .btn-primary:focus {
   opacity: 1;
 }
 .form-page {
-  padding: 140px 0 280px 0;
+  padding: 70px 0;
+}
+@media only screen and (min-width: 1200px) {
+  .form-page {
+    padding: 105px 0 140px 0;
+  }
 }
 .form-page .title h3 {
   font-weight: 400;
@@ -1151,7 +1178,7 @@ form.generic-form .submit-separator {
 }
 @media only screen and (max-width: 768px) {
   .explore form input[type="search"] {
-    display: block;
+    margin: 10px;
   }
 }
 .explore form button[type="submit"] {
@@ -1163,6 +1190,7 @@ form.generic-form .submit-separator {
 @media only screen and (max-width: 768px) {
   .explore form button[type="submit"] {
     margin: 0;
+    padding-left: 0;
   }
 }
 .explore form button[type="submit"]:hover,
@@ -1325,6 +1353,9 @@ section.inventions .invention footer li {
 }
 section.inventions .invention footer li span {
   font-size: 15px;
+}
+section.contributors {
+  padding-bottom: 280px;
 }
 section.contributors .contributors-wrapper {
   position: relative;
@@ -1764,7 +1795,7 @@ section.project .title h3 {
   border: 1px solid #979797;
 }
 .page-wrapper header.page-head.simple h3 {
-  padding-bottom: 105px;
+  padding-bottom: 45px;
 }
 @media only screen and (max-width: 768px) {
   .page-wrapper header.page-head.simple h3 {

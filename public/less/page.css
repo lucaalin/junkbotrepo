@@ -12,6 +12,7 @@ textarea {
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
   outline-width: 0 !important;
+  outline: none;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -236,7 +237,7 @@ p {
   border: 1px solid #979797;
 }
 .page-wrapper header.page-head.simple h3 {
-  padding-bottom: 105px;
+  padding-bottom: 45px;
 }
 @media only screen and (max-width: 768px) {
   .page-wrapper header.page-head.simple h3 {
